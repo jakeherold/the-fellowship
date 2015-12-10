@@ -1,15 +1,20 @@
+@font-face {
+  font-family: 'RINGBEARER';
+  src: url('fonts/RINGBEARER.TTF');
+}
 *{
 padding:0;
 margin:0;
 box-sizing: border-box;
 text-align: center;
+
 }
 body{
-  background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-color: #464646;
+  background-position: center center !important;
+	background-repeat: no-repeat !important;
+	background-attachment: fixed !important;
+	background-size: cover !important;
+	background-color: #464646 !important;
 }
 #gameBody{
   	background: url("img/background-img-5.png");
@@ -29,6 +34,10 @@ a:hover{
     background-color: rgba(248, 248, 255, .7);
     margin: 2em 0.5em;
     padding: 1em;
+  }
+  .ringbearer{
+    font-family: 'RINGBEARER';
+    margin: 0.5em;
   }
 .content {
   width: 100%;
@@ -106,6 +115,7 @@ ul{
 .navList{
   margin: 0.5em;
   font-size: 1.5em;
+  font-family: 'RINGBEARER';
 }
 
 .referenceList{
