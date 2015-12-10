@@ -192,10 +192,10 @@ if (savedChar != null){
 };
 //stupid elfs need "an" not "a"
 if (player.species === "elf"){
-    document.getElementById('intro').innerHTML = 'Congrats ' + player.pName + ', you are an ' + player.species +'!';
+    document.getElementById('intro').innerHTML =  player.pName + ', you embark as an ' + player.species +'!';
 }
 else{
-   document.getElementById('intro').innerHTML = 'Congrats ' + player.pName + ', you are a ' + player.species +'!';
+   document.getElementById('intro').innerHTML =  player.pName + ', you embark as a ' + player.species +'!';
 
 }
 function death (q, btn1, btn2, deathbtn) {
@@ -417,7 +417,3 @@ ident.deathbtn6b.addEventListener('click', function() {
 ident.deathbtn7b.addEventListener('click', function() {
     diediedie(ident.q7b, ident.b13b, ident.b14b, ident.deathbtn7b,11);
 });
-
-
-
-

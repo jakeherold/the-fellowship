@@ -1,0 +1,36 @@
+*{
+padding:0;
+margin:0;
+box-sizing: border-box;
+text-align: center;
+}
+
+@media screen and (max-width: 450px){
+.content {
+  width: 100%;
+  padding:2.5%;
+}
+.headerLogo{
+  width:90%;
+}
+.bigLetters{
+  padding-top: 20px;
+  width: 80%;
+  display: inline;
+  color: #A69856;
+  text-align: center;
+  font-size: 2em;
+  text-shadow: -.5px .5px .5px #000;
+}
+.gamePic{
+  max-width: 90%;
+}
+
+
+
+
+
+
+
+
+}

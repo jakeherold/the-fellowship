@@ -30,7 +30,7 @@ body.game a.game, body.about a.about {
 	background-color: #464646;
 }
 
-#gameBody {
+.gameBody {
 	background: url("img/background-img-5.png");
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -48,22 +48,22 @@ body.game a.game, body.about a.about {
 	background-color: #464646;
 }
 
-h1, h2 {
+/*h1, h2 {
 	color: #A69856;
 	text-align: center;
 	font-size: 3em;
 	text-shadow: -.5px .5px .5px #000;
-}
+}*/
 
 h2 {
 	font-size: 2.5em;
 	margin: -3px;
 }
 
-h3#intro {
+/*h3#intro {
 	font-size: 1.5em;
 	font-weight: bold;
-}
+}*/
 
 .form-text {
 	font-weight: bold;
@@ -128,9 +128,9 @@ article.welcome {
 	font-size: 1.25em;
 }
 
-.gameIntro {
+/*.gameIntro {
 	padding-top: 20px;
-}
+}*/
 
 #beginning {
 	font-size: 1.25em;
