@@ -2,12 +2,16 @@
   font-family: 'RINGBEARER';
   src: url('fonts/RINGBEARER.TTF');
 }
+@font-face {
+  font-family: 'BttnFont';
+  src: url('fonts/BttnFont.ttf');
+}
 *{
 padding:0;
 margin:0;
 box-sizing: border-box;
 text-align: center;
-
+font-size: 1em;
 }
 body{
   background-position: center center !important;
@@ -15,6 +19,28 @@ body{
 	background-attachment: fixed !important;
 	background-size: cover !important;
 	background-color: #464646 !important;
+}
+.navList{
+  margin: 0.5em;
+  font-size: 1.5em;
+  font-family: 'RINGBEARER';
+}
+.gamePic, .deathPic, .bioPic{
+  max-width: 90%;
+  padding-top: 1em;
+}
+.ringbearer{
+  font-family: 'RINGBEARER';
+  margin: 0.5em;
+}
+.gameText{
+  padding: 1em;
+}
+.whiteOpacBG{
+  background: url("img/paperBG.png");
+  opacity: 0.9;
+  margin: 2em 0.5em;
+  padding: 1em;
 }
 #gameBody{
   	background: url("img/background-img-5.png");
@@ -29,43 +55,12 @@ a {
 a:hover{
   color: #A69856;
 }
-@media screen and (max-width: 450px){
-  .whiteOpacBG{
-    background-color: rgba(248, 248, 255, .7);
-    margin: 2em 0.5em;
-    padding: 1em;
-  }
-  .ringbearer{
-    font-family: 'RINGBEARER';
-    margin: 0.5em;
-  }
-.content {
-  width: 100%;
-  padding:2.5%;
-}
-.headerLogo{
-  width:90%;
-}
-.bigLetters{
-  padding-top: 20px;
-  width: 80%;
-  display: inline;
-  color: #A69856;
-  text-align: center;
-  font-size: 2em;
-  text-shadow: -.5px .5px .5px #000;
-}
-.gamePic, .deathPic, .bioPic{
-  max-width: 90%;
-  padding-top: 1em;
-}
 .gameOptionButton{
 min-height: 3em;
 width: 87%;
 padding: 0.3em;
-}
-.gameText{
-  padding:1em;
+font-family: 'BttnFont';
+font-size: 0.9rem;
 }
 button:hover {
   opacity: .65;
@@ -107,22 +102,52 @@ button.game {
 	text-align: left;
 	font-size: 1em;
 }
+.bigLetters{
+  padding-top: 20px;
+  width: 80%;
+  display: inline;
+  color: #A69856;
+  text-align: center;
+  font-size: 2em;
+  text-shadow: -.5px .5px .5px #000;
+}
+@media screen and (max-width: 450px){
+.content {
+  width: 100%;
+  padding:2.5%;
+}
+.headerLogo{
+  width:90%;
+}
+.bigLetters{
+  padding-top: 20px;
+  width: 80%;
+  display: inline;
+  color: #A69856;
+  text-align: center;
+  font-size: 2em;
+  text-shadow: -.5px .5px .5px #000;
+}
+
 /*About page*/
 
 ul{
   list-style-type: none;
 }
-.navList{
-  margin: 0.5em;
-  font-size: 1.5em;
-  font-family: 'RINGBEARER';
-}
 
 .referenceList{
   margin: 0.4em;
 }
-
-
-
-
+}
+@media screen and (min-width: 451px){
+.content{
+  font-size: 0.75rem;
+}
+.gameText{
+  font-family: 'BttnFont';
+}
+.whiteOpacBG{
+  width: 75%;
+  margin: auto;
+}
 }
