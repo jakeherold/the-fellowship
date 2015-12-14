@@ -1,5 +1,7 @@
 $(function() {
 
+  //Gather player's info from idex.html
+  
   //holds address for each death picture, to be added dynamically
   var deathPicArray = ["img/game/drunkdeath.gif",
     "img/game/waterfalldeath.gif",
@@ -38,6 +40,7 @@ $(function() {
       $(this).parent().next().children('.gameOptionButton').not('.death').show();
       $(this).parent().children('.gameOptionButton').hide();
       $('#reply1').show();
+      $('#finish').show();
     })
     //shows play again button and disallows frodo track
   $('#b14b').on('click', function() {
