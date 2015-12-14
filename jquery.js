@@ -1,7 +1,12 @@
 $(function() {
 
   //Gather player's info from idex.html
-  
+  function gatherInfo (){
+    var player = JSON.parse(localStorage.getItem('LOTR'));
+    if (player){
+      $('#intro').text(player.pName+', you embark as a '+player.species);
+    }
+  }
   //holds address for each death picture, to be added dynamically
   var deathPicArray = ["img/game/drunkdeath.gif",
     "img/game/waterfalldeath.gif",
@@ -27,6 +32,7 @@ $(function() {
       counter++;
     })
   }
+  gatherInfo();
   insertDeathPic(deathPicArray);
 
   //Properly moves html from sam/frodo track to fellowship track
