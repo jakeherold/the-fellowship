@@ -19,10 +19,11 @@ var startGame = function(e) {
 	var elf = 0;
 	var dwarf = 0;
 	var hobbit = 0;
-	var q1 = $('[name = q1]').val();
-	var q2 = $('[name = q2]').val();
-	var q3 = $('[name = q3]').val();
-	var q4 = $('[name = q4]').val();
+	var q1 = $('[name = q1]:checked').val()
+
+	var q2 = $('[name = q2]:checked').val();
+	var q3 = $('[name = q3]:checked').val();
+	var q4 = $('[name = q4]:checked').val();
 	var qs = [q1, q2, q3,q4];
 	qs.forEach(function(q){
 		switch (q) {

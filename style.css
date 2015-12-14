@@ -51,6 +51,7 @@ body.game a.game, body.about a.about {
 h2 {
   font-size: 2.5em;
   margin: -3px;
+  text-align: center;
 }
 
 .form-text {
