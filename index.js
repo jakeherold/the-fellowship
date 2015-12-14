@@ -1,79 +1,47 @@
-function div_show() {
-	document.getElementById('blackout').style.display = "block";
+
+function div_show(){
+	$('#blackout').show();
 }
 
 function div_hide(){
-	document.getElementById('blackout').style.display = "none";
+	$('#blackout').hide();
 }
+
 var player = {
 	pName: null, // set to null here for testing
 	species: null,
 	gameStage: null
 };
+
 //processes char Creation form data and saves to local storage-REH/GLG
 var startGame = function(e) {
   e.preventDefault();
 	var elf = 0;
 	var dwarf = 0;
 	var hobbit = 0;
-	var q1 = document.getElementsByName('q1');
-	for (var i=0; i < q1.length; i++) {
-		if (q1[i].checked) {
-			if (q1[i].value === "elf") {
-				elf += 1;
-			}
-			else if (q1[i].value === "dwarf") {
-				dwarf += 1;
+	var q1 = $('[name = q1]:checked').val()
 
-			}
-			else if (q1[i].value === "hobbit") {
-				hobbit += 1;
+	var q2 = $('[name = q2]:checked').val();
+	var q3 = $('[name = q3]:checked').val();
+	var q4 = $('[name = q4]:checked').val();
+	var qs = [q1, q2, q3,q4];
+	qs.forEach(function(q){
+		switch (q) {
+			case 'elf':
+				elf++;
+				break;
+			case 'dwarf':
+				dwarf++;
+				break;
+			case 'hobbit':
+				hobbit++;
+				break;
+		}
+	});
+	console.log(elf);
+	console.log(dwarf);
+	console.log(hobbit);
 
-			}
-		}
-	}
-	var q2 = document.getElementsByName('q2');
-	for (var i=0; i < q2.length; i++) {
-		if (q2[i].checked) {
-			if (q2[i].value === "elf") {
-				elf += 1;
-			}
-			else if (q2[i].value === "dwarf") {
-				dwarf += 1;
-			}
-			else if (q2[i].value === "hobbit") {
-				hobbit += 1;
-			}
-		}
-	}
-	var q3 = document.getElementsByName('q3');
-	for (var i=0; i < q3.length; i++) {
-		if (q3[i].checked) {
-			if (q3[i].value === "elf") {
-				elf += 1;
-			}
-			else if (q3[i].value === "dwarf") {
-				dwarf += 1;
-			}
-			else if (q3[i].value === "hobbit") {
-				hobbit += 1;
-			}
-		}
-	}
-	var q4 = document.getElementsByName('q4');
-	for (var i=0; i < q3.length; i++) {
-		if (q4[i].checked) {
-			if (q4[i].value === "elf") {
-				elf += 1;
-			}
-			else if (q4[i].value === "dwarf") {
-				dwarf += 1;
-			}
-			else if (q4[i].value === "hobbit") {
-				hobbit += 1;
-			}
-		}
-	}
 	if (elf >= hobbit && elf >= dwarf) {
 		player.species = "elf";
 	}
@@ -93,8 +61,4 @@ var startGame = function(e) {
 	window.location='game.html';
 }
 //start game Button-REH
-document.getElementById('startGame').addEventListener('click', startGame);
-
-
-
-
+$('#startGame').on('click', startGame);
