@@ -27,6 +27,7 @@ body{
 }
 .gamePic, .deathPic, .bioPic{
   max-width: 90%;
+  max-height: 20%;
   padding-top: 1em;
 }
 .ringbearer{
@@ -41,6 +42,9 @@ body{
   opacity: 0.9;
   margin: 2em 0.5em;
   padding: 1em;
+}
+ul{
+  list-style-type: none;
 }
 #gameBody{
   	background: url("img/background-img-5.png");
@@ -130,10 +134,6 @@ button.game {
 }
 
 /*About page*/
-
-ul{
-  list-style-type: none;
-}
 
 .referenceList{
   margin: 0.4em;
